@@ -1,0 +1,23 @@
+
+ 
+.table td{
+  text-align: center;
+}
+  .ModalBackdrop{
+    max-width: 100% ;
+    position:fixed ;
+    top:0 ;
+    left: 0;
+    width:100% ;
+    height: 100% ;
+    background:rgba(0,0,0,0.5) ;
+
+}
+.Modal{
+    padding:30px;
+    max-width: 700px;
+    margin-left: 300px;
+   
+    background: #ffff;
+    border-radius:10px;
+}

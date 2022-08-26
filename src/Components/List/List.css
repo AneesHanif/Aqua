@@ -1,0 +1,16 @@
+.navbar{
+    top: 0;
+    position: fixed !important;
+    height: 30px;
+    text-align: center;
+    width: 100% !important;
+  background-color:   rgb(68, 108, 179) !important;
+    margin-left:175.6px;
+}
+P{
+    font-weight: bolder;
+    color: white;
+    margin-left: 350PX;
+    font-style: italic;
+    
+}

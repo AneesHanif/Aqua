@@ -1,0 +1,14 @@
+.UserHeading{
+    text-align: center;
+
+    
+}
+.UserHeading{
+border: 2px solid #eee;
+border-radius: 5px;
+
+}
+table th {
+    background-color: black !important;
+    color: white !important;
+}
