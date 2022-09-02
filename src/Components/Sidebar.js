@@ -18,7 +18,7 @@ import OpacityOutlinedIcon from '@mui/icons-material/OpacityOutlined';
 
 export default function Sidebar() {
   return (
-    <Box
+    <Box 
       sx={{ width: "100%", maxWidth: 360, bgcolor: "background.paper" }}
       className="sidebar"
     >
