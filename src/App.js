@@ -15,13 +15,13 @@ import {
 } from "react-router-dom";
 // Styles
 import "./App.css";
-import Navbar from "./Components/List/Navbar.js";
+// import Navbar from "./Components/List/Navbar.js";
 
 function App() {
   return (
     <div className="App">
       <Router>
-        <Navbar />
+        {/* <Navbar /> */}
         <Sidebar />
 
         <Switch>

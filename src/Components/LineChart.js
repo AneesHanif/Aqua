@@ -2,26 +2,39 @@ import { Line } from "react-chartjs-2";
 import { chart as chartjs } from "chart.js/auto";
 import "./LineChart.css";
 
+// Real Time Firebase 
+import { ref, onValue} from "firebase/database";
+import { useState , useEffect } from "react";
+import {database} from "../Firebase/config"
+
+
 export default function LineChart() {
+  const [flow,setFlow] = useState(null)
+  useEffect(()=>{
+    const waterFlow = ref(database,'Aqua/Flow');
+onValue(waterFlow,(snapshot)=>{
+  console.log(snapshot.val())
+  setFlow(snapshot.val())
+})
+  },[flow]) 
+  
   const data = {
     labels: [
       "Jan",
-      "Feb",
-      "Mar",
-      "Apr",
+      "feb",
+      "March",
+      "Aprail",
       "May",
       "Jun",
-      "july",
-      "august",
-      "september",
-      "october",
-      "novermber",
-      "december",
+      "Julay",
+      "Aug",
+      "Sep",
+
     ],
     datasets: [
       {
         label: "WATER USAGE",
-        data: [33, 53, 85, 41, 44, 65, 50, 60, 80, 100],
+        data: [5,10,11,16,18,25,10,4,flow],
         fill: true,
         backgroundColor: "rgba(75,192,192,0.2)",
         borderColor: "rgba(75,192,192,1)",
